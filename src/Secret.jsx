@@ -13,6 +13,7 @@ const Secret = () => {
   const [text, setText] = useState(texts[0]);
   const close = (e, r) => {
     if (r !== "clickaway") {
+      // https://mui.com/material-ui/api/snackbar/#props
       setActive(false);
     }
   };
