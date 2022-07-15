@@ -27,9 +27,7 @@ const Secret = () => {
   return (
     <Grid container direction="row" justifyContent="space-around" alignItems="center">
       <Snackbar open={active} autoHideDuration={1750} onClose={close}>
-        <Alert onClose={close} severity={text[0]}>
-          {`Mensagem de ${text[1]}!`}
-        </Alert>
+        <Alert severity={text[0]}>{`Mensagem de ${text[1]}!`}</Alert>
       </Snackbar>
       <Button
         variant="text"
